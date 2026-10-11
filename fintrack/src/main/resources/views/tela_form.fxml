@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="fintrack.controller.FormController" spacing="16" styleClass="content-area">
+    <VBox spacing="4">
+        <Label text="Nova Transação" styleClass="section-title"/>
+        <Label text="Cadastre uma nova receita ou despesa para manter suas finanças em dia." styleClass="section-subtitle"/>
+    </VBox>
+
+    <VBox styleClass="card" spacing="16" maxWidth="640">
+        <GridPane hgap="16" vgap="14">
+            <columnConstraints>
+                <ColumnConstraints minWidth="120" prefWidth="140"/>
+                <ColumnConstraints hgrow="ALWAYS"/>
+            </columnConstraints>
+
+            <Label text="Descrição:" styleClass="form-label" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+            <TextField fx:id="txtDescricao" promptText="Ex: Salário, Aluguel, Supermercado..." GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+
+            <Label text="Valor (R$):" styleClass="form-label" GridPane.columnIndex="0" GridPane.rowIndex="1"/>
+            <TextField fx:id="txtValor" promptText="Ex: 250.00 ou 1500,50" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+
+            <Label text="Data:" styleClass="form-label" GridPane.columnIndex="0" GridPane.rowIndex="2"/>
+            <DatePicker fx:id="dpData" promptText="Selecione a data" maxWidth="Infinity" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+
+            <Label text="Classificação:" styleClass="form-label" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+            <HBox alignment="CENTER_LEFT" spacing="12" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                <CheckBox fx:id="chkReceita" text="Marcar como Receita (Entrada de Dinheiro)" style="-fx-font-size: 13px; -fx-text-fill: #1E1E24;"/>
+            </HBox>
+
+            <Label text="Observações:" styleClass="form-label" GridPane.columnIndex="0" GridPane.rowIndex="4"/>
+            <TextArea fx:id="txtNotas" prefRowCount="3" promptText="Notas adicionais sobre a transação (opcional)" GridPane.columnIndex="1" GridPane.rowIndex="4"/>
+
+            <HBox alignment="CENTER_LEFT" spacing="16" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                <Button text="Salvar Transação" onAction="#salvarTransacao" styleClass="btn-primary"/>
+                <Label fx:id="lblMensagem" style="-fx-font-weight: bold; -fx-font-size: 13px;"/>
+            </HBox>
+        </GridPane>
+    </VBox>
+</VBox>
