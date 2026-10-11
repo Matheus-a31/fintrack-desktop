@@ -1,5 +1,12 @@
 # FinTrack
 
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![JavaFX](https://img.shields.io/badge/JavaFX-107C41?style=for-the-badge&logo=java&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
+![Apache Maven](https://img.shields.io/badge/Apache_Maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white)
+![JUnit 5](https://img.shields.io/badge/JUnit_5-25A162?style=for-the-badge&logo=junit5&logoColor=white)
+![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
+
 FinTrack é uma aplicação desktop para gerenciamento financeiro pessoal desenvolvida em Java e JavaFX, utilizando SQLite como mecanismo de persistência local. O projeto foi projetado com foco em simplicidade operacional, organização arquitetural em camadas e uma interface gráfica moderna e responsiva.
 
 ---
@@ -65,6 +72,13 @@ A solução segue princípios de separação de responsabilidades (SoC) organiza
 ---
 
 ## Tecnologias Utilizadas
+
+![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
+![JavaFX](https://img.shields.io/badge/JavaFX-107C41?style=for-the-badge&logo=java&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
+![Apache Maven](https://img.shields.io/badge/Apache_Maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white)
+![JUnit 5](https://img.shields.io/badge/JUnit_5-25A162?style=for-the-badge&logo=junit5&logoColor=white)
+![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
 
 - **Linguagem:** Java 17+ (testado e compatível com OpenJDK / Oracle JDK 21).
 - **Interface Gráfica:** JavaFX (Controles, Gráficos e FXML).
