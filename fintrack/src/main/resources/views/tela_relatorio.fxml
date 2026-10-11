@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="fintrack.controller.RelatorioController" spacing="20" styleClass="content-area">
+    <VBox spacing="4">
+        <Label text="Relatório &amp; Indicadores" styleClass="section-title"/>
+        <Label text="Visão geral consolidada do seu patrimônio e fluxo de caixa." styleClass="section-subtitle"/>
+    </VBox>
+
+    <!-- Grid de Indicadores Principais (KPIs) -->
+    <GridPane hgap="16" vgap="16">
+        <!-- Card Receitas -->
+        <VBox styleClass="kpi-card" spacing="8" GridPane.columnIndex="0" GridPane.rowIndex="0" prefWidth="260">
+            <Label text="RECEITAS TOTAIS" styleClass="kpi-title"/>
+            <Label fx:id="lblTotalReceitas" text="R$ 0,00" styleClass="kpi-value-income"/>
+            <Label text="Todas as entradas somadas" style="-fx-font-size: 11px; -fx-text-fill: #94A3B8;"/>
+        </VBox>
+
+        <!-- Card Despesas -->
+        <VBox styleClass="kpi-card" spacing="8" GridPane.columnIndex="1" GridPane.rowIndex="0" prefWidth="260">
+            <Label text="DESPESAS TOTAIS" styleClass="kpi-title"/>
+            <Label fx:id="lblTotalDespesas" text="R$ 0,00" styleClass="kpi-value-expense"/>
+            <Label text="Todas as saídas somadas" style="-fx-font-size: 11px; -fx-text-fill: #94A3B8;"/>
+        </VBox>
+
+        <!-- Card Saldo Líquido -->
+        <VBox styleClass="kpi-card-highlight" spacing="8" GridPane.columnIndex="2" GridPane.rowIndex="0" prefWidth="300">
+            <Label text="SALDO ATUAL EM CONTA" styleClass="kpi-title-white"/>
+            <Label fx:id="lblSaldo" text="R$ 0,00" styleClass="kpi-value-balance"/>
+            <Label text="Balanço consolidado (Receitas - Despesas)" style="-fx-font-size: 11px; -fx-text-fill: #CBD5E1;"/>
+        </VBox>
+    </GridPane>
+
+    <!-- Card de Ações e Resumo -->
+    <VBox styleClass="card" spacing="16">
+        <HBox alignment="CENTER_LEFT" spacing="24">
+            <VBox spacing="2">
+                <Label text="Total de Lançamentos Registrados:" style="-fx-font-size: 13px; -fx-text-fill: #64748B;"/>
+                <Label fx:id="lblTotalTransacoes" text="0" style="-fx-font-size: 18px; -fx-font-weight: bold; -fx-text-fill: #1E1E24;"/>
+            </VBox>
+            <HBox HBox.hgrow="ALWAYS"/>
+            <Button text="Atualizar Indicadores" onAction="#atualizarRelatorio" styleClass="btn-primary"/>
+        </HBox>
+    </VBox>
+</VBox>
