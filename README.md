@@ -9,7 +9,6 @@
 
 FinTrack é uma aplicação desktop para gerenciamento financeiro pessoal desenvolvida em Java e JavaFX, utilizando SQLite como mecanismo de persistência local. O projeto foi projetado com foco em simplicidade operacional, organização arquitetural em camadas e uma interface gráfica moderna e responsiva.
 
----
 
 ## Sumário
 
@@ -27,7 +26,6 @@ FinTrack é uma aplicação desktop para gerenciamento financeiro pessoal desenv
 - [Geração de Pacotes de Distribuição](#geração-de-pacotes-de-distribuição)
 - [Licença](#licença)
 
----
 
 ## Visão Geral
 
@@ -35,7 +33,7 @@ O FinTrack tem como objetivo auxiliar no controle diário de receitas e despesas
 
 A interface gráfica foi concebida utilizando FXML e JavaFX CSS, adotando uma paleta visual baseada em tons de vinho imperial (`#8A151B`), grafite escuro e superfícies limpas, com indicadores visuais dedicados para cada tipo de movimentação financeira.
 
----
+
 
 ## Funcionalidades
 
@@ -50,7 +48,6 @@ A interface gráfica foi concebida utilizando FXML e JavaFX CSS, adotando uma pa
   - Contagem total de transações registradas.
 - **Interface Gráfica e Modo Console:** Disponibilidade de interface gráfica via JavaFX e também de uma interface alternativa em linha de comando (CLI) para fins didáticos e testes de fluxo.
 
----
 
 ## Arquitetura do Projeto
 
@@ -69,16 +66,8 @@ A solução segue princípios de separação de responsabilidades (SoC) organiza
   - `FinTracker`: Controlador com regras de negócio e cálculos de saldo.
 - **Views & Estilos (`resources/views`, `resources/styles`):** Arquivos FXML declarativos associados a uma folha de estilos CSS modular.
 
----
 
 ## Tecnologias Utilizadas
-
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![JavaFX](https://img.shields.io/badge/JavaFX-107C41?style=for-the-badge&logo=java&logoColor=white)
-![SQLite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)
-![Apache Maven](https://img.shields.io/badge/Apache_Maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white)
-![JUnit 5](https://img.shields.io/badge/JUnit_5-25A162?style=for-the-badge&logo=junit5&logoColor=white)
-![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)
 
 - **Linguagem:** Java 17+ (testado e compatível com OpenJDK / Oracle JDK 21).
 - **Interface Gráfica:** JavaFX (Controles, Gráficos e FXML).
@@ -87,7 +76,6 @@ A solução segue princípios de separação de responsabilidades (SoC) organiza
 - **Framework de Testes:** JUnit 5 (Jupiter API e Jupiter Engine).
 - **Empacotamento:** Maven Shade Plugin e JDK `jpackage`.
 
----
 
 ## Estrutura de Diretórios
 
@@ -214,7 +202,6 @@ jpackage --name FinTrack \
 
 O diretório `dist/FinTrack` resultante conterá o executável `FinTrack.exe` pronto para distribuição, sem exigir máquina virtual Java na máquina de destino.
 
----
 
 ## Licença
 
