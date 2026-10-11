@@ -1,0 +1,101 @@
+# ==========================================
+# Compilação e Artefatos do Maven
+# ==========================================
+target/
+**/target/
+dependency-reduced-pom.xml
+*.jar
+*.war
+*.ear
+*.class
+
+# ==========================================
+# Pacotes de Distribuição Locais (Grandes)
+# ==========================================
+dist/
+**/dist/
+*.exe
+*.zip
+*.msi
+*.lnk
+
+# ==========================================
+# Banco de Dados Local (Preservar privacidade de dados)
+# ==========================================
+*.db
+*.sqlite
+*.sqlite3
+fintrack.db
+**/fintrack.db
+
+# ==========================================
+# IDEs e Editores de Código
+# ==========================================
+# Visual Studio Code
+.vscode/
+*.code-workspace
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# ==========================================
+# Arquivos do Sistema Operacional
+# ==========================================
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# ==========================================
+# Logs, Capturas de Tela e Temporários
+# ==========================================
+*.log
+*.tmp
+*.bak
+*.swp
+Captura de Tela*.png
+
+# Compilação e Artefatos do Maven
+target/
+dependency-reduced-pom.xml
+*.jar
+*.class
+
+# Pacotes e Distribuições
+dist/
+*.exe
+*.zip
+*.msi
+
+# Banco de Dados Local
+*.db
+*.sqlite
+*.sqlite3
+fintrack.db
+
+# IDEs
+.vscode/
+.idea/
+*.iml
+.settings/
+.project
+.classpath
+
+# Sistema
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Logs
+*.log
