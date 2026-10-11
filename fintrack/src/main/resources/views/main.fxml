@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml" fx:controller="fintrack.controller.MainController">
+    <top>
+        <HBox alignment="CENTER_LEFT" spacing="16" styleClass="app-header">
+            <ImageView fitHeight="46" preserveRatio="true" smooth="true">
+                <image>
+                    <Image url="@/images/logo-clean-transparent.png"/>
+                </image>
+            </ImageView>
+            <VBox alignment="CENTER_LEFT" spacing="1">
+                <Label text="FinTrack" styleClass="brand-title"/>
+                <Label text="Gestão Financeira Pessoal" styleClass="brand-subtitle"/>
+            </VBox>
+        </HBox>
+    </top>
+    <center>
+        <TabPane fx:id="tabPane" tabClosingPolicy="UNAVAILABLE">
+            <Tab text="Minhas Transações">
+                <fx:include source="tela_lista.fxml" fx:id="telaLista"/>
+            </Tab>
+            <Tab text="Nova Transação">
+                <fx:include source="tela_form.fxml" fx:id="telaForm"/>
+            </Tab>
+            <Tab text="Relatório Financeiro">
+                <fx:include source="tela_relatorio.fxml" fx:id="telaRelatorio"/>
+            </Tab>
+        </TabPane>
+    </center>
+</BorderPane>
