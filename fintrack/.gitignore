@@ -1,0 +1,33 @@
+# Compilação e Artefatos do Maven
+target/
+dependency-reduced-pom.xml
+*.jar
+*.class
+
+# Pacotes e Distribuições
+dist/
+*.exe
+*.zip
+*.msi
+
+# Banco de Dados Local
+*.db
+*.sqlite
+*.sqlite3
+fintrack.db
+
+# IDEs
+.vscode/
+.idea/
+*.iml
+.settings/
+.project
+.classpath
+
+# Sistema
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# Logs
+*.log
