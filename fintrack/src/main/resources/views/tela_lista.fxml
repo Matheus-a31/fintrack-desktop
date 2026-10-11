@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox xmlns:fx="http://javafx.com/fxml" fx:controller="fintrack.controller.ListaController" spacing="16" styleClass="content-area">
+    <VBox spacing="4">
+        <Label text="Histórico de Transações" styleClass="section-title"/>
+        <Label text="Consulte e gerencie todas as receitas e despesas registradas no sistema." styleClass="section-subtitle"/>
+    </VBox>
+    
+    <VBox styleClass="card" spacing="14" VBox.vgrow="ALWAYS">
+        <TableView fx:id="tableView" VBox.vgrow="ALWAYS">
+            <columnResizePolicy>
+                <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+            </columnResizePolicy>
+            <columns>
+                <TableColumn fx:id="colData" text="Data" minWidth="90" maxWidth="120" style="-fx-alignment: CENTER;"/>
+                <TableColumn fx:id="colDescricao" text="Descrição da Transação" minWidth="260"/>
+                <TableColumn fx:id="colValor" text="Valor (R$)" minWidth="110" maxWidth="150" style="-fx-alignment: CENTER-RIGHT;"/>
+                <TableColumn fx:id="colTipo" text="Tipo" minWidth="120" maxWidth="160" style="-fx-alignment: CENTER;"/>
+            </columns>
+        </TableView>
+
+        <HBox alignment="CENTER_RIGHT" spacing="12">
+            <Button text="Editar Transação" onAction="#editarTransacao" styleClass="btn-primary"/>
+            <Button text="Excluir Transação" onAction="#removerTransacao" styleClass="btn-danger"/>
+        </HBox>
+    </VBox>
+</VBox>
