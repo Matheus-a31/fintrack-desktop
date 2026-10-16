@@ -48,6 +48,13 @@ A interface gráfica foi concebida utilizando FXML e JavaFX CSS, adotando uma pa
   - Contagem total de transações registradas.
 - **Interface Gráfica e Modo Console:** Disponibilidade de interface gráfica via JavaFX e também de uma interface alternativa em linha de comando (CLI) para fins didáticos e testes de fluxo.
 
+<img width="1920" height="998" alt="Tela Minhas Transações" src="https://github.com/user-attachments/assets/29cb7773-19de-4af5-85ac-03e1b109a6ba" />
+
+<img width="1920" height="814" alt="Tela Nova Transação" src="https://github.com/user-attachments/assets/84558dfd-488a-408b-bf5b-6c1b8515ed9c" />
+
+<img width="1920" height="686" alt="Tela Relatório Financeiro" src="https://github.com/user-attachments/assets/edf2a7cb-d90a-46fc-80fe-62219a87f0de" />
+
+
 
 ## Arquitetura do Projeto
 
